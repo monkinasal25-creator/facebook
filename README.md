@@ -85,17 +85,16 @@ SCREENSHOTS
 
 MEMBERS LISTED AND ROLES
 
-Member 1: API and Authentication Handler
-Responsible for implementing the Facebook Graph API integration, setting up access token authentication, handling API requests and responses, managing field parameters, and processing the /me endpoint data.
+Kevin Cuaresma: API and Authentication Handler
 
-Member 2: JavaScript Logic and Data Processing
-Responsible for writing the core JavaScript functions, implementing async/await for API calls, processing API responses, handling user input validation, managing profile data display, and creating dynamic DOM elements for profile information.
+Aira Queroda: JavaScript Logic and Data Processing
 
-Member 3: UI and CSS Designer
-Responsible for designing the user interface, creating responsive CSS layouts with black and white theme, implementing loading animations, styling error messages, designing profile card layouts, and ensuring the design works across all screen sizes including mobile devices.
 
-Member 4: GitHub and Documentation Manager
-Responsible for setting up the GitHub repository, managing branches and pull requests, creating the README documentation, organizing project files, and ensuring proper version control practices are followed.
+Pia Olga: UI and CSS Designer
+
+
+Katrina Claire: GitHub and Documentation Manager
+
 
 
 
