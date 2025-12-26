@@ -76,27 +76,10 @@ Click the Fetch Profile button or press Enter to fetch your profile data
 Wait for the profile information to load and display in the result area
 View all available profile details including picture, personal information, and contact details
 
-Step 4: Local Server Setup (Recommended)
-If using XAMPP, place the project folder in the htdocs directory
-Access the application via http://localhost/sircarl/group/katrina/facebook/
-If using Live Server, right-click on index.html and select Open with Live Server
 
 SCREENSHOTS
 
-Screenshot 1: Desktop View
-The profile viewer interface displays a header with the title, an input field for access token with fetch button, a result area showing profile information in organized cards, and a footer with API credits. The layout is centered with a maximum width for optimal readability.
-
-Screenshot 2: Mobile View
-The mobile responsive design adapts the interface for smaller screens. The input field, buttons, and profile cards are optimized for touch interaction with appropriate sizing and spacing. The grid layout adjusts to single column on mobile devices.
-
-Screenshot 3: Loading State
-When fetching profile data, a loading spinner and loading text appear below the input field. The fetch button is disabled during this time to prevent duplicate requests.
-
-Screenshot 4: Profile Display
-The profile information is displayed in organized cards showing profile picture at the top, followed by all available user data fields. Each field is displayed with a label and value in a clean grid layout.
-
-Screenshot 5: Error Handling
-Error messages are displayed in a black container above the result area when API requests fail, invalid access tokens are used, network issues occur, or permission errors are encountered.
+<img width="1174" height="757" alt="image" src="https://github.com/user-attachments/assets/2b48b76e-80e6-4901-8cc7-d76691c746d4" />
 
 MEMBERS LISTED AND ROLES
 
@@ -111,4 +94,5 @@ Responsible for designing the user interface, creating responsive CSS layouts wi
 
 Member 4: GitHub and Documentation Manager
 Responsible for setting up the GitHub repository, managing branches and pull requests, creating the README documentation, organizing project files, and ensuring proper version control practices are followed.
+
 
