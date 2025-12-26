@@ -7,7 +7,7 @@ This project is a web-based application that integrates with the Facebook Graph 
 API DETAILS USED
 
 Base URL
-https://graph.facebook.com/v18.0
+https://graph.facebook.com/v24.0
 
 Endpoints
 
@@ -94,5 +94,6 @@ Responsible for designing the user interface, creating responsive CSS layouts wi
 
 Member 4: GitHub and Documentation Manager
 Responsible for setting up the GitHub repository, managing branches and pull requests, creating the README documentation, organizing project files, and ensuring proper version control practices are followed.
+
 
 
