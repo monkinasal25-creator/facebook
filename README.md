@@ -79,7 +79,9 @@ View all available profile details including picture, personal information, and 
 
 SCREENSHOTS
 
-<img width="1174" height="757" alt="image" src="https://github.com/user-attachments/assets/2b48b76e-80e6-4901-8cc7-d76691c746d4" />
+
+<img width="732" height="772" alt="image" src="https://github.com/user-attachments/assets/e3f4e363-f863-425b-8c5c-a5d683f50568" />
+
 
 MEMBERS LISTED AND ROLES
 
@@ -94,6 +96,7 @@ Responsible for designing the user interface, creating responsive CSS layouts wi
 
 Member 4: GitHub and Documentation Manager
 Responsible for setting up the GitHub repository, managing branches and pull requests, creating the README documentation, organizing project files, and ensuring proper version control practices are followed.
+
 
 
 
