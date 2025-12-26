@@ -28,7 +28,7 @@ function fetchProfile() {
 async function fetchFacebookProfile(accessToken) {
     try {
         const fields = 'id,name,email,picture,birthday,gender,location,hometown,about,website,link,age_range,verified,first_name,last_name,middle_name';
-        const apiUrl = 'https://graph.facebook.com/v18.0/me?access_token=' + accessToken + '&fields=' + fields;
+        const apiUrl = 'https://graph.facebook.com/v24.0/me?access_token=' + accessToken + '&fields=' + fields;
         
         const response = await fetch(apiUrl);
 
@@ -209,4 +209,5 @@ facebookAccessToken.addEventListener('input', function() {
         facebookProfileError.classList.remove('show');
     }
 });
+
 
