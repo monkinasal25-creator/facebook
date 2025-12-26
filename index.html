@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="facebook-profile-container">
+        <header class="facebook-profile-header">
+            <h1 class="facebook-profile-title">
+                <i class="bi bi-facebook"></i>
+                Facebook Profile
+            </h1>
+        </header>
+
+        <main class="facebook-profile-main">
+            <div class="facebook-profile-input-section">
+                <div class="facebook-profile-input-wrapper">
+                    <input 
+                        type="text" 
+                        id="facebookAccessToken" 
+                        class="facebook-profile-input" 
+                        placeholder="Enter your Facebook access token..."
+                        autocomplete="off"
+                    >
+                    <button 
+                        id="facebookFetchBtn" 
+                        class="facebook-profile-fetch-btn"
+                        type="button"
+                    >
+                        <i class="bi bi-search"></i>
+                        Fetch Profile
+                    </button>
+                </div>
+                <div class="facebook-profile-loading" id="facebookProfileLoading">
+                    <div class="facebook-profile-spinner"></div>
+                    <span>loading...</span>
+                </div>
+            </div>
+
+            <div class="facebook-profile-error" id="facebookProfileError"></div>
+
+            <div class="facebook-profile-result" id="facebookProfileResult">
+                <div class="facebook-profile-welcome">
+                    <i class="bi bi-person-circle"></i>
+                    <p>Enter your access token to view your Facebook profile</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="facebook-profile-footer">
+            <p>Powered by Facebook Graph API</p>
+        </footer>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.facebook-profile-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.facebook-profile-header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.facebook-profile-title {
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.facebook-profile-title i {
+    font-size: 28px;
+}
+
+.facebook-profile-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.facebook-profile-input-section {
+    margin-bottom: 20px;
+}
+
+.facebook-profile-input-wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.facebook-profile-input {
+    flex: 1;
+    padding: 14px 16px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.facebook-profile-input:focus {
+    border-color: #000000;
+}
+
+.facebook-profile-input:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+}
+
+.facebook-profile-fetch-btn {
+    padding: 14px 24px;
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.facebook-profile-fetch-btn:hover:not(:disabled) {
+    background-color: #333333;
+    transform: scale(1.02);
+}
+
+.facebook-profile-fetch-btn:active:not(:disabled) {
+    transform: scale(0.98);
+}
+
+.facebook-profile-fetch-btn:disabled {
+    background-color: #999999;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.facebook-profile-loading {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    color: #666666;
+    font-size: 14px;
+}
+
+.facebook-profile-loading.show {
+    display: flex;
+}
+
+.facebook-profile-spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f5f5f5;
+    border-top-color: #000000;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.facebook-profile-error {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    display: none;
+    align-items: center;
+    gap: 10px;
+}
+
+.facebook-profile-error.show {
+    display: flex;
+}
+
+.facebook-profile-error i {
+    font-size: 20px;
+}
+
+.facebook-profile-result {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 20px;
+    min-height: 300px;
+}
+
+.facebook-profile-welcome {
+    text-align: center;
+    color: #666666;
+    padding: 40px 20px;
+}
+
+.facebook-profile-welcome i {
+    font-size: 64px;
+    margin-bottom: 15px;
+    display: block;
+    color: #999999;
+}
+
+.facebook-profile-welcome p {
+    font-size: 18px;
+}
+
+.facebook-profile-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+
+.facebook-profile-card:last-child {
+    border-bottom: none;
+}
+
+.facebook-profile-label {
+    font-weight: 600;
+    color: #000000;
+    min-width: 120px;
+}
+
+.facebook-profile-value {
+    color: #333333;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    min-width: 0;
+}
+
+.facebook-profile-value a {
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.facebook-profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #000000;
+    margin-bottom: 15px;
+}
+
+.facebook-profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .facebook-profile-container {
+        min-height: 100vh;
+        box-shadow: none;
+    }
+
+    .facebook-profile-header {
+        padding: 15px;
+    }
+
+    .facebook-profile-title {
+        font-size: 20px;
+    }
+
+    .facebook-profile-title i {
+        font-size: 24px;
+    }
+
+    .facebook-profile-main {
+        padding: 15px;
+    }
+
+    .facebook-profile-input-wrapper {
+        flex-direction: column;
+    }
+
+    .facebook-profile-input {
+        width: 100%;
+        padding: 12px 14px;
+        font-size: 15px;
+    }
+
+    .facebook-profile-fetch-btn {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+
+    .facebook-profile-result {
+        padding: 15px;
+        min-height: 250px;
+    }
+
+    .facebook-profile-welcome {
+        padding: 30px 15px;
+    }
+
+    .facebook-profile-welcome i {
+        font-size: 56px;
+    }
+
+    .facebook-profile-welcome p {
+        font-size: 16px;
+    }
+
+    .facebook-profile-card {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .facebook-profile-label {
+        min-width: auto;
+    }
+
+    .facebook-profile-image {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .facebook-profile-header {
+        padding: 12px;
+    }
+
+    .facebook-profile-title {
+        font-size: 18px;
+    }
+
+    .facebook-profile-title i {
+        font-size: 22px;
+    }
+
+    .facebook-profile-main {
+        padding: 12px;
+    }
+
+    .facebook-profile-input {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .facebook-profile-fetch-btn {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    .facebook-profile-result {
+        padding: 12px;
+        min-height: 200px;
+    }
+
+    .facebook-profile-welcome {
+        padding: 20px 10px;
+    }
+
+    .facebook-profile-welcome i {
+        font-size: 48px;
+    }
+
+    .facebook-profile-welcome p {
+        font-size: 14px;
+    }
+
+    .facebook-profile-card {
+        padding: 12px;
+    }
+
+    .facebook-profile-image {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .facebook-profile-container {
+        margin: 20px auto;
+        min-height: calc(100vh - 40px);
+        border-radius: 8px;
+    }
+}
+
